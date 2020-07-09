@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pantau Covid19</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="selalu_jaga_kesehatan">Selalu Jaga Kesehatan</string>
+    <string name="lihat_keadaan_sekitar_kamu_nselalu_memakai_masker_apabila_nkamu_pergi_keluar_rumah">Lihat keadaan di lingkungan kamu, \nselalu memakai masker apabila \nkamu pergi keluar rumah.</string>
+    <string name="update_terkini">Update Terkini</string>
+    <string name="_9_juli_2020">9 Juli 2020</string>
+    <string name="_450">475</string>
+    <string name="kasus">Total Kasus</string>
+    <string name="_20">20</string>
+    <string name="sembuh">Sembuh</string>
+    <string name="meninggal">Meninggal</string>
+    <string name="_38">38</string>
+    <string name="pdp">PDP</string>
+    <string name="_2365">2365</string>
+    <string name="_22">22</string>
+    <string name="kasus_baru">Kasus Baru</string>
+    <string name="odp">ODP</string>
+    <string name="dalam">Dalam</string>
+    <string name="perawatan">Perawatan</string>
+    <string name="layanan_darurat">Layanan Lainnya</string>
+    <string name="nomor_darurat">Nomor Darurat</string>
+    <string name="data_provinsi">Data Provinsi</string>
+    <string name="seputar_covid">Seputar Covid</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
+    <string name="apakah_anda_sudah_mencuci_ntangan_anda_hari_ini">Apakah anda sudah mencuci \ntangan anda hari ini ?</string>
+</resources>
