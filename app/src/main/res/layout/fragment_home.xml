@@ -110,12 +110,29 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerPositif"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_duration="300">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#865201" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
                     <TextView
                         android:id="@+id/txtPositif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="@string/_450"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -151,12 +168,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerSembuh"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_duration="300">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#a00038" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
                     <TextView
                         android:id="@+id/txtSembuh"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="@string/_20"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -191,12 +224,29 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerMeninggal"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_duration="300">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#4f0453" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
                     <TextView
                         android:id="@+id/txtMeninggal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="@string/_38"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -246,12 +296,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerPDP"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_duration="300">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#055d32" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
                     <TextView
                         android:id="@+id/txtPDP"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="@string/_2365"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -287,12 +353,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerODP"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_duration="300">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#022c62" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
                     <TextView
                         android:id="@+id/txtODP"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="@string/_22"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -327,12 +409,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmerPerawatan"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shimmer_auto_start="true"
+                        app:shimmer_duration="300">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#7d5606" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
                     <TextView
                         android:id="@+id/txtPerawatan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="@string/_38"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
