@@ -84,13 +84,12 @@ class HomeFragment : Fragment() {
                 val data = response.body()?.data
                 val arraySize = data!!.size
                 val days = arraySize - 1
-                txtSembuh?.text = data.get(days).jumlahPasienSembuh
-                txtMeninggal?.text = data.get(days).jumlahPasienMeninggal
-                txtPerawatan?.text = data.get(days).jumlahpasiendalamperawatan
-                txtPositif?.text = data.get(days).jumlahKasusKumulatif
-                txtKasusBaru?.text = data.get(days).jumlahKasusBaruperHari
-                txtKasusNegatif?.text = data.get(days).jumlahNegatif
-                Toast.makeText(context, days.toString(), Toast.LENGTH_SHORT).show()
+                txtSembuh?.text = data[days].jumlahPasienSembuh
+                txtMeninggal?.text = data[days].jumlahPasienMeninggal
+                txtPerawatan?.text = data[days].jumlahpasiendalamperawatan
+                txtPositif?.text = data[days].jumlahKasusKumulatif
+                txtKasusBaru?.text = data[days].jumlahKasusBaruperHari
+                txtKasusNegatif?.text = data[days].jumlahNegatif
                 hideShimmer()
             }
 
