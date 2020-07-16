@@ -16,6 +16,8 @@ import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.text.SimpleDateFormat
+import java.util.*
 
 class HomeFragment : Fragment() {
 
@@ -30,6 +32,13 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         getData()
+        currentDate()
+    }
+
+    private fun currentDate() {
+        val dateFormat = SimpleDateFormat("dd MMMM yyyy")
+        val now = dateFormat.format(Date())
+        txtTanggal.text = now
     }
 
     override fun onResume() {
@@ -67,32 +76,40 @@ class HomeFragment : Fragment() {
                     "Gagal mendapatkan data, harap periksa jaringan anda !",
                     Toast.LENGTH_SHORT
                 ).show()
+                hideShimmer()
             }
 
             //Jika sukses mendapatkan data
             override fun onResponse(call: Call<DataResponse>, response: Response<DataResponse>) {
                 val data = response.body()?.data
-                txtSembuh?.text = data?.get(132)?.jumlahPasienSembuh
-                txtMeninggal?.text = data?.get(132)?.jumlahPasienMeninggal
-                txtPerawatan?.text = data?.get(132)?.jumlahpasiendalamperawatan
-                txtPositif?.text = data?.get(132)?.jumlahKasusKumulatif
-                txtPDP?.text = data?.get(132)?.pdp
-                txtODP?.text = data?.get(132)?.odp
-                //Hide Shimmer Animation
-                shimmerMeninggal?.stopShimmer()
-                shimmerODP?.stopShimmer()
-                shimmerPDP?.stopShimmer()
-                shimmerPerawatan?.stopShimmer()
-                shimmerPositif?.stopShimmer()
-                shimmerSembuh?.stopShimmer()
-                shimmerMeninggal?.visibility = View.GONE
-                shimmerODP?.visibility = View.GONE
-                shimmerPDP?.visibility = View.GONE
-                shimmerPerawatan?.visibility = View.GONE
-                shimmerPositif?.visibility = View.GONE
-                shimmerSembuh?.visibility = View.GONE
+                val arraySize = data!!.size
+                val days = arraySize - 1
+                txtSembuh?.text = data.get(days).jumlahPasienSembuh
+                txtMeninggal?.text = data.get(days).jumlahPasienMeninggal
+                txtPerawatan?.text = data.get(days).jumlahpasiendalamperawatan
+                txtPositif?.text = data.get(days).jumlahKasusKumulatif
+                txtKasusBaru?.text = data.get(days).jumlahKasusBaruperHari
+                txtKasusNegatif?.text = data.get(days).jumlahNegatif
+                Toast.makeText(context, days.toString(), Toast.LENGTH_SHORT).show()
+                hideShimmer()
             }
 
         })
+    }
+
+    private fun hideShimmer() {
+        //Hide Shimmer Animation
+        shimmerMeninggal?.stopShimmer()
+        shimmerODP?.stopShimmer()
+        shimmerPDP?.stopShimmer()
+        shimmerPerawatan?.stopShimmer()
+        shimmerPositif?.stopShimmer()
+        shimmerSembuh?.stopShimmer()
+        shimmerMeninggal?.visibility = View.GONE
+        shimmerODP?.visibility = View.GONE
+        shimmerPDP?.visibility = View.GONE
+        shimmerPerawatan?.visibility = View.GONE
+        shimmerPositif?.visibility = View.GONE
+        shimmerSembuh?.visibility = View.GONE
     }
 }

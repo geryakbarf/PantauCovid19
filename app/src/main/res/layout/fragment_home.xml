@@ -314,7 +314,7 @@
                     </com.facebook.shimmer.ShimmerFrameLayout>
 
                     <TextView
-                        android:id="@+id/txtPDP"
+                        android:id="@+id/txtKasusBaru"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -329,12 +329,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="@string/pdp"
+                        android:text="@string/kasus_baru"
                         android:textColor="@android:color/white"
                         android:textSize="15sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/txtPDP" />
+                        app:layout_constraintTop_toBottomOf="@+id/txtKasusBaru" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -371,7 +371,7 @@
                     </com.facebook.shimmer.ShimmerFrameLayout>
 
                     <TextView
-                        android:id="@+id/txtODP"
+                        android:id="@+id/txtKasusNegatif"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -386,12 +386,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="@string/odp"
+                        android:text="@string/kasus_negatif"
                         android:textColor="@android:color/white"
                         android:textSize="15sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/txtODP" />
+                        app:layout_constraintTop_toBottomOf="@+id/txtKasusNegatif" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -5,6 +5,6 @@ data class DataModels(
     var jumlahPasienSembuh: String = "",
     var jumlahPasienMeninggal: String = "",
     var jumlahpasiendalamperawatan: String = "",
-    var pdp: String = "",
-    var odp: String = ""
+    var jumlahKasusBaruperHari: String = "",
+    var jumlahNegatif: String = ""
 )
