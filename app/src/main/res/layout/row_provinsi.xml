@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cardview_shadow_end_color"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/profileIv"
+            android:src="@drawable/provinsi"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/provinsi_nama"
+            android:text="Provinsi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/profileIv"
+            />
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/provinsi_nama"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/profileIv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/provinsi_kasus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:text="total kasus"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/provinsi_kasusValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/provinsi_nama"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/line1"
+            android:layout_toStartOf="@id/line3"
+            android:layout_marginEnd="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/provinsi_sembuh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="Sembuh"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/provinsi_sembuhValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/provinsi_nama"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="46dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/provinsi_meninggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Meninggal"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/provinsi_meninggalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
