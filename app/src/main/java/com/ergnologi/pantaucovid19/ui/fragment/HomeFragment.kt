@@ -83,7 +83,7 @@ class HomeFragment : Fragment() {
             override fun onResponse(call: Call<DataResponse>, response: Response<DataResponse>) {
                 val data = response.body()?.data
                 val arraySize = data!!.size
-                val days = arraySize - 1
+                val days = arraySize - 2
                 txtSembuh?.text = data[days].jumlahPasienSembuh
                 txtMeninggal?.text = data[days].jumlahPasienMeninggal
                 txtPerawatan?.text = data[days].jumlahpasiendalamperawatan
