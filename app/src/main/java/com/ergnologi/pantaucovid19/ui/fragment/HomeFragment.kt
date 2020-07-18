@@ -1,5 +1,6 @@
 package com.ergnologi.pantaucovid19.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import com.ergnologi.pantaucovid19.R
 import com.ergnologi.pantaucovid19.api.GetDataApi
 import com.ergnologi.pantaucovid19.response.DataResponse
+import com.ergnologi.pantaucovid19.ui.ProvinsiActivity
 import com.ergnologi.pantaucovid19.utils.Server
 import kotlinx.android.synthetic.main.fragment_home.*
 import retrofit2.Call
@@ -19,7 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.text.SimpleDateFormat
 import java.util.*
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), View.OnClickListener {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,6 +35,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         getData()
         currentDate()
+        btnDataProvinsi.setOnClickListener(this)
     }
 
     private fun currentDate() {
@@ -109,5 +112,11 @@ class HomeFragment : Fragment() {
         shimmerPerawatan?.visibility = View.GONE
         shimmerPositif?.visibility = View.GONE
         shimmerSembuh?.visibility = View.GONE
+    }
+
+    override fun onClick(p0: View?) {
+        when (p0?.id) {
+            R.id.btnDataProvinsi -> startActivity(Intent(context, ProvinsiActivity::class.java))
+        }
     }
 }
