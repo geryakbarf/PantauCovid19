@@ -28,4 +28,6 @@
     <string name="rumah_sakit">Rumah Sakit</string>
     <string name="apakah_anda_sudah_mencuci_ntangan_anda_hari_ini">Apakah anda sudah mencuci \ntangan anda hari ini ?</string>
     <string name="kasus_negatif">Kasus Negatif</string>
+    <string name="jawa_barat">Jawa Barat</string>
+    <string name="kasus_positif">Kasus Positif</string>
 </resources>

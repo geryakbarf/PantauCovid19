@@ -92,7 +92,6 @@ class HomeFragment : Fragment() {
                 txtKasusNegatif?.text = data[days].jumlahNegatif
                 hideShimmer()
             }
-
         })
     }
 
