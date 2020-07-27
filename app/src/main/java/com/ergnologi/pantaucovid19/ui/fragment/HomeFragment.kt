@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment
 import com.ergnologi.pantaucovid19.R
 import com.ergnologi.pantaucovid19.api.GetDataApi
 import com.ergnologi.pantaucovid19.response.DataResponse
+import com.ergnologi.pantaucovid19.ui.ArticleActivity
 import com.ergnologi.pantaucovid19.ui.ProvinsiActivity
-import com.ergnologi.pantaucovid19.ui.RumahSakitActivity
 import com.ergnologi.pantaucovid19.utils.Server
 import kotlinx.android.synthetic.main.fragment_home.*
 import retrofit2.Call
@@ -39,7 +39,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         currentDate()
         btnDataProvinsi.setOnClickListener(this)
         btnCallDarurat.setOnClickListener(this)
-        btnRumahSakit.setOnClickListener(this)
+        btnArtikel.setOnClickListener(this)
     }
 
     private fun currentDate() {
@@ -127,7 +127,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 }
                 startActivity(intent)
             }
-            R.id.btnRumahSakit -> startActivity(Intent(context, RumahSakitActivity::class.java))
+            R.id.btnArtikel -> startActivity(Intent(context, ArticleActivity::class.java))
         }
     }
 }
