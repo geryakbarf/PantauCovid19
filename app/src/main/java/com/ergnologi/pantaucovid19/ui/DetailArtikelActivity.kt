@@ -27,6 +27,7 @@ class DetailArtikelActivity : AppCompatActivity(), View.OnClickListener {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.statusBarColor = resources.getColor(R.color.unikom)
         //
+        id = intent.getStringExtra("video")
         judulDetail.text = intent.getStringExtra("judul")
         penulisDetail.text = intent.getStringExtra("penulis")
         Glide.with(applicationContext).load(intent.getIntExtra("gambar", 0)).into(imgDetail)
@@ -36,7 +37,7 @@ class DetailArtikelActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(p0: View?) {
         val intent = Intent(applicationContext, YoutubePlayerActivity::class.java)
-        intent.putExtra("video", intent.getStringExtra("video"))
+        intent.putExtra("video", id)
         startActivity(intent)
     }
 }

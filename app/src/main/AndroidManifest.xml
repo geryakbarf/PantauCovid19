@@ -15,18 +15,35 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.YoutubePlayerActivity"></activity>
-        <activity android:name=".ui.DetailArtikelActivity" />
-        <activity android:name=".ui.ArticleActivity" />
-        <activity android:name=".ui.MenuActivity">
+        <activity android:name=".ui.ResultActivity"></activity>
+        <activity android:name=".ui.PeriksaMandiriActivity" />
+        <activity
+            android:name=".ui.YoutubePlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.DetailArtikelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ArticleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MenuActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.ProvinsiActivity" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProvinsiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SeputarCovidActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

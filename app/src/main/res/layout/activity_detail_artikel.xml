@@ -38,7 +38,6 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="10dp"
-                android:text="@string/cara_mencuci_tangan_dengan_baik_dan_benar"
                 android:textColor="@android:color/white"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -50,7 +49,6 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="16dp"
-                android:text="@string/oleh_tantri_sabrina"
                 android:textColor="@android:color/white" />
 
 

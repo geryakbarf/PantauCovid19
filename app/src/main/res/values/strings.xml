@@ -58,4 +58,13 @@
         Jika anda <b>hamil</b> atau memiliki <b>kondisi kronis</b>, Anda <b>harus</b> mengenakan masker saat pergi ke luar
         \nJika anda memiliki gejala <b>demam</b>, <b>batuk</b>, atau <b>gejala perapsan</b> , tolong jangan lepaskan masker mu
     </string>
+    <string name="putar_video">Putar Video</string>
+    <string name="artikel">Artikel</string>
+    <string name="periksa_mandiri">Periksa Mandiri</string>
+    <string name="periksa_mandiri_diri_anda_melalui_apps">Periksa mandiri diri anda melalui apps</string>
+    <string name="jangan_khawatir_data_anda_tidak_akan_disebar">Jangan khawatir, data anda tidak akan disebar</string>
+    <string name="mulai_periksa_mandiri">Mulai Periksa Mandiri</string>
+    <string name="pertanyaan_ke_1">Pertanyaan Ke 1</string>
+    <string name="iya">Iya</string>
+    <string name="selesai">Selesai</string>
 </resources>

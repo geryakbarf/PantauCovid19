@@ -15,7 +15,7 @@ class YoutubePlayerActivity : YouTubeBaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_youtube_player)
         //z
-        val kode = intent.getStringExtra("video")
+        val video = intent.getStringExtra("video")
         ytPlayer.initialize(Server.api, object : YouTubePlayer.OnInitializedListener {
             override fun onInitializationFailure(
                 p0: YouTubePlayer.Provider?,
@@ -34,8 +34,7 @@ class YoutubePlayerActivity : YouTubeBaseActivity() {
                 p1: YouTubePlayer?,
                 p2: Boolean
             ) {
-                Toast.makeText(applicationContext, kode, Toast.LENGTH_SHORT).show()
-                p1!!.loadVideo(kode)
+                p1!!.loadVideo(video)
             }
         })
     }
