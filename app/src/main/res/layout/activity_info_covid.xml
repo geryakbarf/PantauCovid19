@@ -29,8 +29,8 @@
             android:id="@+id/txtJudulInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seputar Covid"
-            android:textSize="36dp"
+            android:text="@string/seputar_covid"
+            android:textSize="36sp"
             android:textColor="@android:color/white"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
@@ -58,13 +58,13 @@
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="240dp"
-                        android:src="@drawable/jaga_kesehatan"/>
+                        android:layout_height="140dp"
+                        android:src="@drawable/jaga_kesehatan" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:text="@string/apaitu_ncov"
@@ -74,7 +74,7 @@
                         android:layout_marginTop="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:textColor="@android:color/black"
@@ -84,7 +84,7 @@
                         android:layout_marginTop="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="14dp"
+                        android:textSize="14sp"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:text="@string/bagaimana_mencegah_ncov"
@@ -94,11 +94,21 @@
                         android:layout_marginTop="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:textColor="@android:color/black"
                         android:text="@string/isi_info_dua"/>
+
+                    <TextView
+                        android:layout_marginTop="36dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textColor="@android:color/black"
+                        android:text="@string/isi_info_tiga"/>
 
             </LinearLayout>
 

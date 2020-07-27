@@ -32,4 +32,30 @@
     <string name="kasus_positif">Kasus Positif</string>
     <string name="rumah_sakit_al_ihsan">Rumah Sakit Al Ihsan</string>
     <string name="jalan_dago_no_15_bandung">Jalan Dago No 15 Bandung</string>
+    <string name="info_covid">Seputar Covid</string>
+    <string name="apaitu_ncov">Apa itu nCov ?</string>
+    <string name="isi_info_satu">
+        <p>
+            Novel Corona Virus(2019-nCoV) adalah jenis baru coronavirus yang belum pernah diidentifikasi sebelumnya oleh manusia.
+            Coronavirus merupakan keluarga besar virus yang menyebabkan penyakit pada manusia dan hewan. Pada manusia menyebabkan penyakit mulai flu biasa
+            hingga penyakit serius seperti Middle East Respiratory Syndrome(MERS) dan sindrom pernapasan Aku berat / Severe Acute Respiratory Syndrome(SARS).
+        </p>
+    </string>
+    <string name="bagaimana_mencegah_ncov">Bagaimana cara mencega penularan COVID-19 ? </string>
+    <string name="isi_info_dua">
+        <p>
+            Hingga saat ini, belum ada vaksin untuk mencegah penularan nCoV. Namun, bukan berarti kita tidak bisa berkontribusi untuk mencegah penularan
+            penyakit ini, salah satu cara mencegah penyebaran virus ini adalah :
+            \n
+            \n1.<b>Menjaga</b> kesehatan dan kebugaran.
+            \n2.Sering <b>mencuci tangan</b> menggunakan sabun.
+            \n3.Ketika <b>batuk/bersin</b> tutup menggunakan lengan.
+            \n4.<b>Jangan menyentuh</b> mata, hidung, atau mulut.
+            \n5.<b>Gunakan</b> masker dan <b>hindari</b> keramaian.
+        </p>
+    </string>
+    <string name="isi_info_tiga">
+        Jika anda <b>hamil</b> atau memiliki <b>kondisi kronis</b>, Anda <b>harus</b> mengenakan masker saat pergi ke luar
+        \nJika anda memiliki gejala <b>demam</b>, <b>batuk</b>, atau <b>gejala perapsan</b> , tolong jangan lepaskan masker mu
+    </string>
 </resources>
