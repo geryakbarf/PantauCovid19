@@ -30,4 +30,6 @@
     <string name="kasus_negatif">Kasus Negatif</string>
     <string name="jawa_barat">Jawa Barat</string>
     <string name="kasus_positif">Kasus Positif</string>
+    <string name="rumah_sakit_al_ihsan">Rumah Sakit Al Ihsan</string>
+    <string name="jalan_dago_no_15_bandung">Jalan Dago No 15 Bandung</string>
 </resources>
