@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.DetailArtikelActivity"></activity>
+        <activity android:name=".ui.YoutubePlayerActivity"></activity>
+        <activity android:name=".ui.DetailArtikelActivity" />
         <activity android:name=".ui.ArticleActivity" />
         <activity android:name=".ui.MenuActivity">
             <intent-filter>
