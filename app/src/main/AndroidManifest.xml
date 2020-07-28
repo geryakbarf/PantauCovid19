@@ -36,9 +36,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.MainActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.ProvinsiActivity"
             android:screenOrientation="portrait" />
         <activity

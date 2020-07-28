@@ -11,7 +11,4 @@ interface GetDataApi {
 
     @GET("/api/provinsi")
     fun getDataProvinsi(): Call<ProvinsiResponse>
-
-
-
 }
