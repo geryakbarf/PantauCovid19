@@ -8,17 +8,16 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ergnologi.pantaucovid19.R
 import com.ergnologi.pantaucovid19.ui.PeriksaMandiriActivity
-import kotlinx.android.synthetic.main.fragment_dashboard.*
+import kotlinx.android.synthetic.main.fragment_periksa_mandiri.*
 
 class PeriksaMandiriFragment : Fragment(), View.OnClickListener {
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_dashboard, container, false)
+        return inflater.inflate(R.layout.fragment_periksa_mandiri, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

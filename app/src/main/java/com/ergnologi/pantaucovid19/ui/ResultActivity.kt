@@ -46,5 +46,4 @@ class ResultActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         finish()
     }
-
 }
